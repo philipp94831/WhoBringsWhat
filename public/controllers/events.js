@@ -10,6 +10,10 @@ function($scope, $state, events, event, $translatePartialLoader){
 
   $scope.event = event;
 
+  $scope.submit = function() {
+    console.log($scope.form);
+  }
+
   $scope.addItem = function(){
     if($scope.name === '') { return; }
     events.addItem(event._id, {
