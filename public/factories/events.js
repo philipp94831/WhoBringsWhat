@@ -10,7 +10,7 @@ app.factory('events', ['$http', function($http){
   };
 
   o.create = function(event) {
-    return $http.post('/api/events', event).success(function(data){
+    return $http.post('/api/events/create', event).success(function(data){
       o.events.push(data);
     });
   };

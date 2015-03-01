@@ -8,7 +8,7 @@ router.param('item', controller.set_item);
 
 router.get('/', controller.get_all);
 
-router.post('/', controller.create);
+router.post('/create', controller.create);
 
 router.get('/:event', controller.get_event);
 

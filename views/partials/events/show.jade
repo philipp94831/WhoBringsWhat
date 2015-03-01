@@ -2,8 +2,9 @@ doctype html
 .page-header
   h3 {{event.title}}
 
-div(ng-repeat="item in event.items")
-  {{item.name}}, {{item.count}}, {{item.bringer}}
+sortable-table(
+  columns= "[{'name': 'name', 'title': '" + __('event_item.attributes.name') + "'}, {'name': 'count', 'title': '" + __('event_item.attributes.count') + "'}, {'name': 'bringer', 'title': '" + __('event_item.attributes.bringer') + "'}]",
+  data="{{event.items}}")
 
 form(ng-submit="addItem()", style="margin-top:30px;")
   h3= __('helpers.add', {article: __('event_item.article.one.indefinite'), model: __('event_item.name')})

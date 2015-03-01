@@ -23,6 +23,7 @@ html(ng-app='WhoBringsWhat')
     link(rel='import', href='bower_components/paper-fab/paper-fab.html')
     link(rel='import', href='bower_components/paper-input/paper-input.html')
     link(rel='import', href='bower_components/paper-button/paper-button.html')
+    link(rel='import', href='bower_components/sortable-table/sortable-table.html')
     link(rel='import', href='paper-submit.html')
 
     script(src='/bower_components/angular-cookies/angular-cookies.min.js')
@@ -38,8 +39,10 @@ html(ng-app='WhoBringsWhat')
     script(src='/bower_components/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.min.js')
 
     script(src='/controllers/application.js')
+    script(src='/routes/application.js')
     script(src='/factories/events.js')
     script(src='/controllers/events.js')
+    script(src='/routes/events.js')
 
     script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
   
