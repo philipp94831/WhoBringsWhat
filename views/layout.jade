@@ -1,0 +1,53 @@
+doctype html
+html(ng-app='WhoBringsWhat')
+  head
+    title= title
+
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes')
+
+    link(rel='stylesheet', href='/assets/css/style.css')
+    link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+
+    //script(src='/bower_components/requirejs/require.js')
+    script(src='/bower_components/jquery/dist/jquery.min.js')
+    script(src='/bower_components/angular/angular.min.js')
+    script(src='/main.js')
+    script(src='/app.js')
+    script(src='/bower_components/webcomponentsjs/webcomponents.js')
+
+    link(rel='import', href='bower_components/font-roboto/roboto.html')
+    link(rel='import', href='bower_components/core-header-panel/core-header-panel.html')
+    link(rel='import', href='bower_components/core-toolbar/core-toolbar.html')
+    link(rel='import', href='bower_components/core-icons/core-icons.html')
+    link(rel='import', href='bower_components/paper-fab/paper-fab.html')
+    link(rel='import', href='bower_components/paper-input/paper-input.html')
+
+    script(src='/bower_components/angular-cookies/angular-cookies.min.js')
+    script(src='/bower_components/angular-ui-router/release/angular-ui-router.min.js')        
+    script(src='/bower_components/angular-ui-router.stateHelper/statehelper.min.js')
+    script(src='/bower_components/angular-translate/angular-translate.min.js')
+    script(src='/bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.min.js')
+    script(src='/bower_components/angular-translate-loader-url/angular-translate-loader-url.min.js')
+    script(src='/bower_components/angular-translate-loader-partial/angular-translate-loader-partial.min.js')
+    script(src='/bower_components/messageformat/messageformat.js')
+    script(src='/bower_components/messageformat/locale/de.js')
+    script(src='/bower_components/messageformat/locale/en.js')
+    script(src='/bower_components/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.min.js')
+
+    script(src='/controllers/application.js')
+    script(src='/factories/events.js')
+    script(src='/controllers/events.js')
+
+    script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
+  
+  body(touch-action='auto')
+    core-header-panel
+        core-toolbar
+            div(flex)
+                a(ui-sref='home')= title
+        main
+            block content
+
+  
+

@@ -1,0 +1,39 @@
+{
+	"helpers": {
+		"add": "Füge {{article}} {{model}} hinzu",
+		"post": "Veröffentlichen"
+	},
+	"home": {
+		"views": {
+			"home": "Startseite"
+		}
+	},
+	"event": {
+		"name": "Veranstaltung",
+		"article": {
+			"one": {
+				"indefinite": "eine"
+			}
+		},
+		"attributes": {
+			"title": "Titel",
+			"description": "Beschreibung"
+		},
+		"views": {
+			"show": {}
+		}
+	},
+	"event_item": {
+		"name": "Mitbringsel",
+		"article": {
+			"one": {
+				"indefinite": "ein"
+			}
+		},
+		"attributes": {
+			"name": "Name",
+			"count": "Anzahl",
+			"bringer": "Wer?"
+		}
+	}
+}

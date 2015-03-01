@@ -1,0 +1,10 @@
+doctype html
+.page-header
+  h3= __('helpers.add', {article: __('event.article.one.indefinite'), model: __('event.name')})
+
+form(ng-submit="create()", style="margin-top:30px;")
+  paper-input-decorator(label= __('event.attributes.title'), floatingLabel)
+    input(ng-model="title", is="core-input", required)
+  paper-input-decorator(label= __('event.attributes.description'), floatingLabel)
+    input(ng-model="description", is='core-input', required)
+  button.btn.btn-primary(type="submit")= __('helpers.post')

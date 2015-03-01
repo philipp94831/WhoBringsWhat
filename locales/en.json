@@ -1,0 +1,40 @@
+{
+  "helpers": {
+    "add": "Add {{article}} {{model}}",
+    "post": "Post"
+  },
+  "home": {
+    "views": {
+      "home": "Home"
+    }
+  },
+  "event": {
+    "name": "Event",
+    "article": {
+      "one": {
+        "indefinite": "an"
+      }
+    },
+    "attributes": {
+      "title": "Titel",
+      "description": "Beschreibung"
+    },
+    "views": {
+      "show": {}
+    }
+  },
+  "event_item": {
+    "name": "Item",
+    "article": {
+      "one": {
+        "indefinite": "an"
+      }
+    },
+    "attributes": {
+      "name": "Name",
+      "count": "Count",
+      "bringer": "Who?"
+    }
+  }
+
+}

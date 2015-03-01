@@ -1,0 +1,16 @@
+doctype html
+.page-header
+  h3 {{event.title}}
+
+div(ng-repeat="item in event.items")
+  {{item.name}}, {{item.count}}, {{item.bringer}}
+
+form(ng-submit="addItem()", style="margin-top:30px;")
+  h3= __('helpers.add', {article: __('event_item.article.one.indefinite'), model: __('event_item.name')})
+  paper-input-decorator(label= __('event_item.attributes.name'), floatingLabel)
+    input(ng-model="name", is="core-input", required)
+  paper-input-decorator(label= __('event_item.attributes.count'), floatingLabel)
+    input(ng-model="count", is='core-input', type='number', min="0", required)
+  paper-input-decorator(label= __('event_item.attributes.bringer'), floatingLabel)
+    input(ng-model="bringer", is='core-input', required)
+  button.btn.btn-primary(type="submit")= __('helpers.post')
